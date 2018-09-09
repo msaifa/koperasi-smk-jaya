@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E0D7478-ED24-4B73-94DC-B74F45EF9E6A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Comp14.My.MyApplication</StartupObject>
+    <RootNamespace>Comp14</RootNamespace>
+    <AssemblyName>Comp14</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Comp14.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Comp14.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppModule.vb" />
+    <Compile Include="FrmAdmin.Designer.vb">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdministrasi.Designer.vb">
+      <DependentUpon>FrmAdministrasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdministrasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBayarAnggota.Designer.vb">
+      <DependentUpon>FrmBayarAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBayarAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBayarTagihan.Designer.vb">
+      <DependentUpon>FrmBayarTagihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBayarTagihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBayarUmum.Designer.vb">
+      <DependentUpon>FrmBayarUmum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBayarUmum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuatTagihan.Designer.vb">
+      <DependentUpon>FrmBuatTagihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuatTagihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCariAnggota.Designer.vb">
+      <DependentUpon>FrmCariAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCariAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCariBarang.Designer.vb">
+      <DependentUpon>FrmCariBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCariBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCariJenis.Designer.vb">
+      <DependentUpon>FrmCariJenis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCariJenis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCariPengguna.Designer.vb">
+      <DependentUpon>FrmCariPengguna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCariPengguna.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCariUnit.Designer.vb">
+      <DependentUpon>FrmCariUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCariUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDeposit.Designer.vb">
+      <DependentUpon>FrmDeposit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDeposit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistoryTagihan.Designer.vb">
+      <DependentUpon>FrmHistoryTagihan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistoryTagihan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKasir.Designer.vb">
+      <DependentUpon>FrmKasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLaporanPembelian.Designer.vb">
+      <DependentUpon>FrmLaporanPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLaporanPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAAAA.Designer.vb">
+      <DependentUpon>FrmAAAA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAAAA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageAnggota.Designer.vb">
+      <DependentUpon>FrmManageAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageBarang.Designer.vb">
+      <DependentUpon>FrmManageBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageFoto.Designer.vb">
+      <DependentUpon>FrmManageFoto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageFoto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageJenis.Designer.vb">
+      <DependentUpon>FrmManageJenis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageJenis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageUnit.Designer.vb">
+      <DependentUpon>FrmManageUnit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageUnit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransAnggota.Designer.vb">
+      <DependentUpon>FrmTransAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTransUmum.Designer.vb">
+      <DependentUpon>FrmTransUmum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTransUmum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUtama.Designer.vb">
+      <DependentUpon>FrmUtama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManageUser.Designer.vb">
+      <DependentUpon>FrmManageUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManageUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUbahPassword.Designer.vb">
+      <DependentUpon>FrmUbahPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUbahPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUser.Designer.vb">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAAAA.resx">
+      <DependentUpon>FrmAAAA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdministrasi.resx">
+      <DependentUpon>FrmAdministrasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBayarAnggota.resx">
+      <DependentUpon>FrmBayarAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBayarTagihan.resx">
+      <DependentUpon>FrmBayarTagihan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBayarUmum.resx">
+      <DependentUpon>FrmBayarUmum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuatTagihan.resx">
+      <DependentUpon>FrmBuatTagihan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCariAnggota.resx">
+      <DependentUpon>FrmCariAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCariBarang.resx">
+      <DependentUpon>FrmCariBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCariJenis.resx">
+      <DependentUpon>FrmCariJenis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCariPengguna.resx">
+      <DependentUpon>FrmCariPengguna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCariUnit.resx">
+      <DependentUpon>FrmCariUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDeposit.resx">
+      <DependentUpon>FrmDeposit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistoryTagihan.resx">
+      <DependentUpon>FrmHistoryTagihan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKasir.resx">
+      <DependentUpon>FrmKasir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLaporanPembelian.resx">
+      <DependentUpon>FrmLaporanPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageAnggota.resx">
+      <DependentUpon>FrmManageAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageBarang.resx">
+      <DependentUpon>FrmManageBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageFoto.resx">
+      <DependentUpon>FrmManageFoto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageJenis.resx">
+      <DependentUpon>FrmManageJenis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageUnit.resx">
+      <DependentUpon>FrmManageUnit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransAnggota.resx">
+      <DependentUpon>FrmTransAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTransUmum.resx">
+      <DependentUpon>FrmTransUmum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUtama.resx">
+      <DependentUpon>FrmUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManageUser.resx">
+      <DependentUpon>FrmManageUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUbahPassword.resx">
+      <DependentUpon>FrmUbahPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUser.resx">
+      <DependentUpon>FrmUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
